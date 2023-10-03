@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_nav_graph"
+    app:startDestination="@id/btnHome">
+
+    <fragment
+        android:id="@+id/btnHome"
+        android:name="com.example.bookrides.Fragments.home1"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home1" >
+        <action
+            android:id="@+id/action_btnHome_to_btnSetting"
+            app:destination="@id/btnSetting" />
+    </fragment>
+<!--    <fragment-->
+<!--        android:id="@+id/btnSetting"-->
+<!--        android:name="com.example.bookrides.Fragments.SettingsFragment"-->
+<!--        android:label="fragment_settings"-->
+<!--        tools:layout="@layout/fragment_settings" />-->
+    <fragment
+        android:id="@+id/btnSavedPlaces"
+        android:name="com.example.bookrides.Fragments.SavedPlacesFragment"
+        android:label="fragment_saved_places"
+        tools:layout="@layout/fragment_saved_places" />
+    <fragment
+        android:id="@+id/btnCar"
+        android:name="com.example.bookrides.Fragments.Car"
+        android:label="Cars"
+        tools:layout="@layout/fragment_car" />
+    <fragment
+        android:id="@+id/btnPlaneCoach"
+        android:name="com.example.bookrides.Fragments.School_vans"
+        android:label="PlaneCoach"
+        tools:layout="@layout/fragment_school_vans" />
+    <fragment
+        android:id="@+id/btnRikshaws"
+        android:name="com.example.bookrides.Fragments.Rikshaws"
+        android:label="Rikshaws"
+        tools:layout="@layout/fragment_rikshaws" />
+
+    <fragment
+        android:id="@+id/btnDabba"
+        android:name="com.example.bookrides.Fragments.Carry_Dabba"
+        android:label="CarryDabba"
+        tools:layout="@layout/fragment_carry__dabba" />
+    <fragment
+        android:id="@+id/btnMotorcycle"
+        android:name="com.example.bookrides.Fragments.Motorcycle"
+        android:label="MotorCycle"
+        tools:layout="@layout/fragment_motorcycle" />
+
+
+</navigation>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+
+
+
+
+    <item android:title="vehicles type">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/Motorcycle"
+                    android:icon="@drawable/motorcycle"
+                    android:title="Motorcycle"/>
+                <item
+                    android:id="@+id/Suzuki"
+                    android:icon="@drawable/suzuki"
+                    android:title="Suzuki"/>
+                <item
+                    android:id="@+id/Dyna"
+                    android:icon="@drawable/tipper"
+                    android:title="Dyna"/>
+                <item
+                    android:id="@+id/Car"
+                    android:icon="@drawable/sports"
+                    android:title="Car"/>
+                <item
+                    android:id="@+id/Rilshaw"
+                    android:icon="@drawable/rikshaw"
+                    android:title="Rikshaw"/>
+                <item
+                    android:id="@+id/PlaneCoach"
+                    android:icon="@drawable/van"
+                    android:title="PlaneCoach"/>
+                <item
+                    android:id="@+id/CarryDabba"
+                    android:icon="@drawable/carry"
+                    android:title="CarryDabba"/>
+                <item
+                    android:id="@+id/Van"
+                    android:icon="@drawable/van"
+                    android:title="Van"/>
+            </group>
+        </menu>
+    </item>
+
+
+
+
+</menu>

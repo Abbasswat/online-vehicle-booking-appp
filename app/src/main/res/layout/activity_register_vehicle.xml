@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+
+    tools:context=".Register_Vehicle">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:scaleType="fitXY"
+        android:src="@drawable/wallpaper"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/slider"
+        android:scaleType="centerCrop"
+        android:src="@drawable/abc"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/slider"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/title1"
+        android:layout_below="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+
+
+        android:layout_marginBottom="10dp"
+        android:background="#805516"
+        android:gravity="center"
+        android:text="Register in any of the following categories "
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:cornerRadius="20dp" />
+
+    <LinearLayout
+        android:id="@+id/lineartour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/linear_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:padding="5dp"
+            android:src="@drawable/van" />
+
+
+        <TextView
+            android:id="@+id/registerTouristVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title1"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:text="Tourist Booking"
+
+            android:textColor="@color/cardColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:elevation="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearloader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineartour"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/linear_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:padding="5dp"
+            android:src="@drawable/tipper" />
+
+
+        <TextView
+            android:id="@+id/registerLoaderVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineartour"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:text="Loader Register"
+            android:textColor="@color/cardColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:elevation="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearschool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearloader"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/linear_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:padding="5dp"
+            android:src="@drawable/schoolbus" />
+
+
+        <TextView
+            android:id="@+id/registerShoolVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineartour"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:text="school vehicel Register"
+            android:textColor="@color/cardColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:elevation="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearBuses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearschool"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/linear_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="3"
+            android:padding="5dp"
+            android:src="@drawable/bus" />
+
+
+        <TextView
+            android:id="@+id/registerbuses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineartour"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:text="Long Journey vehicles"
+            android:textColor="@color/cardColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:elevation="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearsimplebooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearBuses"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/linear_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="3"
+            android:padding="5dp"
+            android:src="@drawable/sports" />
+
+
+        <TextView
+            android:id="@+id/registersimplebooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearBuses"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:text="simple booking"
+            android:textColor="@color/cardColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:elevation="10dp" />
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/gotoMainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/linearsimplebooking"
+
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#805516"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="15dp"
+        android:text="go to Dashboard"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:elevation="10dp" />
+
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

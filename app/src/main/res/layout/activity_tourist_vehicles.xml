@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".RegisterVehicle.Tourist_vehicles">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallpaper" />
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="?actionBarSize"
+        android:src="@drawable/quantum_ic_arrow_back_grey600_24"
+        app:tint="@color/white" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:gravity="bottom|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=" Tourist Vehicle"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_attach_image"
+                    android:id="@+id/tour_image"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.2"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/tour_title"
+                    android:layout_width="match_parent"
+                    android:textColorHint="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/white"
+                    android:hint="visiting place"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/tourprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:drawableStart="@drawable/baseline_payment_24"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/white"
+
+                    android:hint="price"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColor="@color/white" />
+                <EditText
+                    android:id="@+id/tourphone"
+                    android:layout_width="match_parent"
+                    android:textColorHint="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableStart="@drawable/ic_call"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/white"
+                    android:hint="mobile number"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/tourlocation"
+                    android:layout_width="match_parent"
+                    android:textColorHint="@color/white"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableStart="@drawable/ic_location"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/white"
+                    android:hint="start loaction"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/tourduration"
+                    android:layout_width="match_parent"
+                    android:textColorHint="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableStart="@drawable/baseline_schedule_24"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/white"
+                    android:hint=" tour duration"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/uploadDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/backgroud"
+                    android:gravity="start|center_vertical"
+                    android:hint="select date"
+                    android:padding="8dp"
+                    android:textColorHint="@color/cardColor" />
+                <EditText
+                    android:id="@+id/tourDatepicker"
+                    style="?android:spinnerStyle"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/backgroud"
+                    android:gravity="start|center_vertical"
+                    android:onClick="openDatepicker"
+                    android:padding="8dp"
+                    android:text="jan 1 2023"
+                    android:textColor="@color/cardColor"
+                    android:textSize="25sp" />
+                <EditText
+                    android:id="@+id/tourTime"
+                    android:layout_width="match_parent"
+                    android:textColorHint="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableStart="@drawable/baseline_schedule_24"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/white"
+                    android:hint=" tour Time"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/white" />
+                <Spinner
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/tour_vehicle_types"
+                    android:background="#fff"
+                    android:drawablePadding="10dp"
+
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:entries="@array/Tour_vehicle_types"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/tour_vehiclesNum"
+                    android:layout_width="match_parent"
+                    android:textColorHint="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableStart="@drawable/baseline_schedule_24"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/white"
+                    android:hint=" vehicle Num"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/tourplanner"
+                    android:layout_width="match_parent"
+                    android:textColorHint="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableStart="@drawable/ic_help"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/white"
+                    android:hint=" tour by(faisal movers)"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/tour_desc"
+                    android:layout_width="match_parent"
+                    android:textColorHint="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableStart="@drawable/ic_help"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/white"
+                    android:hint=" tour Description"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/white" />
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tour_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="Register"
+                    android:textStyle="bold"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#4A834C"
+                    app:elevation="10dp" />
+
+                <TextView
+                    android:id="@+id/txtLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/login_string"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

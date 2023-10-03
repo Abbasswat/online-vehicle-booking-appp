@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayoutBus"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    android:background="@drawable/backgroud"
+    app:cardElevation="8dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recCard"
+
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/recImage"
+            android:src="@drawable/uploadimg"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
+
+        <TextView
+            android:id="@+id/recTitle"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/recImage"
+            android:text="Bus name"
+            android:textColor="@color/cardColor"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/recTime"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@id/recTitle"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:text="03:30 pm"
+            android:textColor="@color/cardColor"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@id/recImage"
+            android:layout_below="@+id/recTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="12dp">
+
+
+            <TextView
+                android:id="@+id/recAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+
+                android:text="Address"
+                android:textColor="@color/cardColor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="To"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/cardColor"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/recDest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:maxLines="1"
+                android:text="desc"
+                android:textColor="@color/cardColor"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/recDate"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/linear"
+            android:layout_toEndOf="@+id/recImage"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"
+            android:text="date"
+            android:textColor="@color/cardColor"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/callBus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackdesign"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:src="@drawable/telephonecalll"
+            android:text="Phone Number"
+            android:textAllCaps="false" />
+
+
+        <ImageView
+            android:id="@+id/locationBus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackdesign"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:src="@drawable/map_button"
+            android:text="Email"
+            android:textAllCaps="false" />
+
+        <ImageView
+            android:id="@+id/Whatsapp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackdesign"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:src="@drawable/whatsapp"
+            android:text="Email"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview_schP"
+        android:orientation="horizontal">
+        <ImageView android:layout_height="40dp"
+            android:layout_width="193dp"
+            android:id="@+id/updateB"
+            android:src="@drawable/baseline_edit_note_24"
+            app:tint="@color/cardColor" />
+
+        <ImageView android:layout_height="40dp"
+            android:layout_width="193dp"
+            android:id="@+id/deleteB"
+            android:src="@drawable/baseline_delete_24"
+            app:tint="@color/cardColor" />
+    </LinearLayout>
+
+</LinearLayout>

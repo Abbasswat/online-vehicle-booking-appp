@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">BookRides</string>
+    <string name="login_string">Already have an account? <b>Login here</b></string>
+    <string name="open_navigation_drawer">open drawer</string>
+    <string name="close_navigation_drawer">close drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="welcome_note">We are here to provides services to you so youn can book cars , Bikes , rikshaws, loaders etc . we can also provides the opportunity of job if yo have cars or bikes etc. </string>
+
+    <string-array name="vehicle_type">
+        <item>Select your vehicle</item>
+        <item>Car</item>
+        <item>Motorcycle</item>
+        <item>Suzuki</item>
+        <item>PlaneCoach</item>
+        <item>CarryDabba</item>
+        <item>Rikshaw</item>
+        <item>Dyna</item>
+    </string-array>
+    <string-array name="schoolvehicle_type">
+        <item>Select your vehicle</item>
+        <item>Car</item>
+        <item>Bus</item>
+        <item>Suzuki</item>
+        <item>PlaneCoach</item>
+        <item>CarryDabba</item>
+        <item>Rikshaw</item>
+        <item>Litase</item>
+    </string-array>
+    <string-array name="Loader_type">
+        <item>Select your vehicle</item>
+        <item>Suzuki</item>
+        <item>Dyna</item>
+        <item>Truck</item>
+        <item>Dumper</item>
+        <item>Tractor</item>
+
+    </string-array>
+
+    <string-array name="students_types">
+        <item>Select student categories</item>
+        <item>School kids</item>
+        <item>Girls</item>
+        <item>Boys</item>
+        <item>CollegeGirls</item>
+        <item>CollegeBoys</item>
+        <item>Universities girls</item>
+        <item>Girls and kids</item>
+        <item>Teachers</item>
+
+    </string-array>
+    <string-array name="Colleges_name">
+        <item>Select Colllege or school</item>
+        <item>School kids</item>
+        <item>Girls</item>
+        <item>Boys</item>
+        <item>CollegeGirls</item>
+        <item>CollegeBoys</item>
+        <item>Universities girls</item>
+        <item>Girls and kids</item>
+        <item>Teachers</item>
+
+    </string-array>
+    <string-array name="Bus_vehicle_types">
+        <item>Select vehicle</item>
+        <item>BUs</item>
+        <item>Coasters</item>
+        <item>planeCoaches</item>
+        <item>Cars</item>
+
+
+    </string-array>
+    <string-array name="Tour_vehicle_types">
+        <item>Select vehicle</item>
+        <item>BUs</item>
+        <item>Coasters</item>
+        <item>planeCoaches</item>
+        <item>Cars</item>
+        <item>Suzuki</item>
+        <item>Van</item>
+    </string-array>
+</resources>

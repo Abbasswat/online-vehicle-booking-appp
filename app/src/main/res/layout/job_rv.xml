@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:background="@color/cardview_dark_background"
+    android:layout_height="wrap_content">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardBackgroundColor="@color/white"-->
+<!--        app:cardCornerRadius="20dp"-->
+<!--        app:cardElevation="0dp"-->
+<!--        android:id="@+id/cardview_sch"-->
+<!--        app:cardMaxElevation="5dp"-->
+<!--android:backgroundTint="@color/cardview_dark_background"-->
+<!--        app:cardUseCompatPadding="true">-->
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="horizontal">
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/ProfileImageJ"-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:src="@drawable/profile" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:weightSum="2">
+                        <TextView
+                            android:id="@+id/userNameJ"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:text="User Name"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:layout_weight="1"
+                            android:textStyle="bold" />
+
+
+
+
+
+                    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/posttime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:src="@drawable/ic_location"
+                        android:layout_weight="1"
+                        android:text="20-08-2023"
+                        android:textSize="12sp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+    <LinearLayout
+        android:id="@+id/linearjob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+android:layout_below="@+id/mainLayout"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/JAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:text="Address"
+            android:textColor="@color/white"
+
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/J_call"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/buttons_background"
+            android:src="@drawable/ic_call"
+            android:text="Phone Number"
+            android:textAllCaps="false"
+
+            />
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:layout_below="@+id/linearjob"
+        android:text="_____________________________________________________"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearDesc"
+        android:layout_marginLeft="10dp"
+android:layout_below="@+id/divider"
+        android:layout_marginTop="3dp"
+        >
+
+
+        <TextView
+            android:id="@+id/jobDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearjob"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Job Desc"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/jobImage"
+        android:padding="8dp"
+
+        android:importantForAutofill="auto"
+        android:layout_below="@+id/linearDesc"
+        android:layout_gravity="center"
+        android:src="@drawable/uploadimg"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jobImage"
+        android:orientation="horizontal">
+
+
+        <ImageView android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:id="@+id/deleteJ"
+            android:src="@drawable/baseline_delete_24"
+            app:tint="@color/cardColor" />
+    </LinearLayout>
+
+</RelativeLayout>

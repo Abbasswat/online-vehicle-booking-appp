@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView android:layout_height="50dp" android:layout_width="match_parent" android:textColor="#fff" android:gravity="center" android:textSize="25sp" android:background="@color/lavender" android:text="Update Content Panel"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20sp" android:layout_marginTop="10dp" android:id="@+id/uimgurl" android:hint="Image URL"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20sp" android:layout_marginTop="10dp" android:id="@+id/uname" android:hint="Name"/>
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="phone"
+        android:textSize="20sp" android:layout_marginTop="10dp"
+        android:id="@+id/uphone" android:hint="+348********"/>
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/uemail"
+        android:hint="Email"/>
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/uvehicletype"
+        android:hint="vehicle"/>
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/uvehiclenumber"
+        android:hint="vehiclenumber"/>
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ulocation"
+        android:hint="vehiclenumber"/>
+
+
+    <Button android:layout_height="wrap_content" android:layout_width="300dp" android:textColor="#fff" android:textSize="20sp" android:background="@color/lavender" android:text="Update" android:layout_marginTop="10dp" android:id="@+id/usubmit" android:layout_marginBottom="10dp" android:layout_gravity="center"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

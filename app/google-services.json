@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "516974999410",
+    "firebase_url": "https://android-app-5dd49-default-rtdb.firebaseio.com",
+    "project_id": "android-app-5dd49",
+    "storage_bucket": "android-app-5dd49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516974999410:android:4a4566e56999b4b3874feb",
+        "android_client_info": {
+          "package_name": "com.example.bookrides"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516974999410-ja7gn8rht1itd68n7ehvg3lfv8q665ea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWOKoAZcaSLd94CygNd9GtMFHb6mPXAVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516974999410-ja7gn8rht1itd68n7ehvg3lfv8q665ea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516974999410:android:b250b20f7e3f6673874feb",
+        "android_client_info": {
+          "package_name": "com.simcoder.uber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516974999410-ja7gn8rht1itd68n7ehvg3lfv8q665ea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWOKoAZcaSLd94CygNd9GtMFHb6mPXAVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516974999410-ja7gn8rht1itd68n7ehvg3lfv8q665ea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
